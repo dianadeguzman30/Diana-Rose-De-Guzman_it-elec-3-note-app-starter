@@ -1,1 +1,1 @@
-default
+[{"id":"01","title":"first Note","body":"MIDTERM PROJECT IN WEB SYSTEM"},{"id":"02","title":"first Note","body":"NEED TO SUBMIT"}]
