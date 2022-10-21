@@ -4,22 +4,24 @@ const write = require ('./write')
 const present = require('./present')
 
 
-const data = process.argv 
+
+const cmd = process.argv 
 
 var note = {}
 
-if(data[2] == 'add') {
+if(cmd[2] == 'add') {
     // Build Object
     note = { 
-        id: data[3],
-        title: data[4],
-        body: data[5]
+        id: cmd[3],
+        title: cmd[4],
+        body: cmd[5]
     }
     // Get old note value
     var oldNote = read()
     // Add note to note.txt
     add(note, oldNote)
 }
-if(data[2] == 'read') {
+if(cmd[2] == 'read') {
     present(read())
 }
+
